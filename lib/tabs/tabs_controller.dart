@@ -13,26 +13,31 @@ class TabsMenu extends StatefulWidget {
 class _TabsMenuState extends State<TabsMenu> {
   final List<Widget> _tabIconList = [
     Tab(icon: Icon(Icons.camera_alt)),
-    Tab(text: Text("Chats")),
-    Tab(text: Text("Status")),
-    Tab(text: Text("Calls")),
+    Tab(text: "Chats"),
+    Tab(text: "Status"),
+    Tab(text: "Calls"),
   ];
 
-  final List<Widget> _tabsList = [PhotoTab, ChatsTab, StatusTab, CallsTab];
+  final List<Widget> _tabsList = [
+    PhotoTab(),
+    ChatsTab(),
+    StatusTab(),
+    CallsTab()
+  ];
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: _tabList.length,
+      length: _tabsList.length,
       child: Scaffold(
         appBar: AppBar(
           title: Text("WhitesApp"),
           bottom: TabBar(
-            tabs: _tabList.map((tabIcon) => tabIcon()).toList(),
+            tabs: _tabIconList,
           ),
         ),
         body: TabBarView(
-          children: _tabsList.map((tab) => tab()).toList(),
+          children: _tabsList,
         ),
       ),
     );
