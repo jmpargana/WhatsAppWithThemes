@@ -20,6 +20,13 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # These dependencies are needed to use the camera.
+  # camera:
+  # # Finds the correct paths to store images.
+  # path_provider:
+  # # Creates paths that work on any platform.
+  # path:
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2

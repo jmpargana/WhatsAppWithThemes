@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 import 'package:whitesapp/tabs/status.dart';
 import 'package:whitesapp/tabs/photo.dart';
-import 'package:whitesapp/tabs/chats.dart';
+import 'package:whitesapp/tabs/chats_tab/chats_tab.dart';
 import 'package:whitesapp/tabs/calls.dart';
 
 class TabsMenu extends StatefulWidget {
@@ -21,6 +20,7 @@ class _TabsMenuState extends State<TabsMenu> {
   final List<Widget> _tabsList = [
     PhotoTab(),
     ChatsTab(),
+    // ChatsTab(),
     StatusTab(),
     CallsTab()
   ];
