@@ -31,7 +31,7 @@ class _TabsMenuState extends State<TabsMenu> {
       length: _tabsList.length,
       child: Scaffold(
         appBar: AppBar(
-          title: Text("WhitesApp"),
+          title: Text("WhatsAppWithThemes"),
           bottom: TabBar(
             tabs: _tabIconList,
           ),
