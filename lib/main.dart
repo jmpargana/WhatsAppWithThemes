@@ -1,5 +1,6 @@
 // import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:whitesapp/custom_theme.dart';
 import 'package:whitesapp/styles.dart';
 // import 'package:camera/camera.dart';
 import 'package:whitesapp/tabs/tabs_controller.dart';
@@ -16,18 +17,21 @@ import 'package:whitesapp/tabs/tabs_controller.dart';
 //   runApp(WhatsAppWithThemes());
 // }
 
-void main() => runApp(WhatsAppWithThemes());
+void main() => runApp(
+      CustomTheme(
+        initialThemeKey: ThemeKeys.GREEN,
+        child: WhatsAppWithThemes(),
+      ),
+    );
 
 class WhatsAppWithThemes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final theme = Themes.getThemeFromKey(ThemeKeys.GREEN);
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "WhatsAppWithThemes",
       // This data will be moved to theme's directory
-      theme: theme,
+      theme: CustomTheme.of(context),
       home: TabsMenu(),
     );
   }

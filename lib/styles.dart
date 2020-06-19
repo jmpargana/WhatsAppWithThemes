@@ -11,7 +11,54 @@ enum ThemeKeys {
   BLUEGREY,
   TEAL
 }
-const numOfThemes = 9;
+
+const numOfThemes = [
+  {
+    "title": "Green Theme",
+    "color": Color(0xff075e54),
+    "key": ThemeKeys.GREEN,
+  },
+  {
+    "title": "Red Theme",
+    "color": Colors.red,
+    "key": ThemeKeys.RED,
+  },
+  {
+    "title": "Blue Theme",
+    "color": Colors.blue,
+    "key": ThemeKeys.BLUE,
+  },
+  {
+    "title": "Orange Theme",
+    "color": Colors.orange,
+    "key": ThemeKeys.ORANGE,
+  },
+  {
+    "title": "Amber Theme",
+    "color": Colors.amber,
+    "key": ThemeKeys.AMBER,
+  },
+  {
+    "title": "Indigo Theme",
+    "color": Colors.indigo,
+    "key": ThemeKeys.INDIGO,
+  },
+  {
+    "title": "Teal Theme",
+    "color": Colors.teal,
+    "key": ThemeKeys.TEAL,
+  },
+  {
+    "title": "Blue Grey Theme",
+    "color": Colors.blueGrey,
+    "key": ThemeKeys.BLUEGREY,
+  },
+  {
+    "title": "Purple Theme",
+    "color": Colors.purple,
+    "key": ThemeKeys.PURPLE,
+  },
+];
 
 class Themes {
   static final ThemeData greenTheme = ThemeData(
