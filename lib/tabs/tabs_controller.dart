@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whitesapp/pages/settings_page.dart';
 import 'package:whitesapp/tabs/status.dart';
 import 'package:whitesapp/tabs/photo.dart';
 import 'package:whitesapp/tabs/chats_tab/chats_tab.dart';
@@ -35,6 +36,21 @@ class _TabsMenuState extends State<TabsMenu> {
           bottom: TabBar(
             tabs: _tabIconList,
           ),
+          actions: [
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: IconButton(
+                icon: Icon(Icons.settings),
+                onPressed: () => Navigator.push( 
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return SettingsPage();
+                    }),
+                  ),
+                ),
+              ),
+          ],
         ),
         body: TabBarView(
           children: _tabsList,

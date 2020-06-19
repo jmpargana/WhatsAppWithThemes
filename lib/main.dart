@@ -21,7 +21,7 @@ void main() => runApp(WhatsAppWithThemes());
 class WhatsAppWithThemes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final theme = Themes.getThemeFromKey(ThemeKeys.RED);
+    final theme = Themes.getThemeFromKey(ThemeKeys.GREEN);
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,

@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 
-enum ThemeKeys { GREEN, RED, BLUE }
+enum ThemeKeys {
+  GREEN,
+  RED,
+  BLUE,
+  ORANGE,
+  AMBER,
+  INDIGO,
+  PURPLE,
+  BLUEGREY,
+  TEAL
+}
+const numOfThemes = 9;
 
 class Themes {
   static final ThemeData greenTheme = ThemeData(
@@ -60,16 +71,142 @@ class Themes {
     ),
   );
 
+  static final ThemeData tealTheme = ThemeData(
+    primaryColor: Colors.teal,
+    accentColor: Colors.teal,
+    indicatorColor: Colors.white,
+    primaryColorDark: Colors.teal,
+    primaryIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    textTheme: TextTheme(
+      title: TextStyle(color: Colors.white),
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    accentIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+  );
+
+  static final ThemeData blueGreyTheme = ThemeData(
+    primaryColor: Colors.blueGrey,
+    accentColor: Colors.blueGrey,
+    indicatorColor: Colors.white,
+    primaryColorDark: Colors.blueGrey,
+    primaryIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    textTheme: TextTheme(
+      title: TextStyle(color: Colors.white),
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    accentIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+  );
+
+  static final ThemeData indigoTheme = ThemeData(
+    primaryColor: Colors.indigo,
+    accentColor: Colors.indigo,
+    indicatorColor: Colors.white,
+    primaryColorDark: Colors.indigo,
+    primaryIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    textTheme: TextTheme(
+      title: TextStyle(color: Colors.white),
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    accentIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+  );
+
+  static final ThemeData amberTheme = ThemeData(
+    primaryColor: Colors.amber,
+    accentColor: Colors.amber,
+    indicatorColor: Colors.white,
+    primaryColorDark: Colors.amber,
+    primaryIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    textTheme: TextTheme(
+      title: TextStyle(color: Colors.white),
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    accentIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+  );
+
+  static final ThemeData purpleTheme = ThemeData(
+    primaryColor: Colors.purple,
+    accentColor: Colors.purple,
+    indicatorColor: Colors.white,
+    primaryColorDark: Colors.purple,
+    primaryIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    textTheme: TextTheme(
+      title: TextStyle(color: Colors.white),
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    accentIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+  );
+
+  static final ThemeData orangeTheme = ThemeData(
+    primaryColor: Colors.orange,
+    accentColor: Colors.orange,
+    indicatorColor: Colors.white,
+    primaryColorDark: Colors.orange,
+    primaryIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    textTheme: TextTheme(
+      title: TextStyle(color: Colors.white),
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+    accentIconTheme: IconThemeData(
+      color: Colors.white,
+    ),
+  );
+
   static ThemeData getThemeFromKey(ThemeKeys themeKey) {
     switch (themeKey) {
       case ThemeKeys.GREEN:
-      return greenTheme;
+        return greenTheme;
       case ThemeKeys.RED:
-      return redTheme;
+        return redTheme;
       case ThemeKeys.BLUE:
-      return blueTheme;
+        return blueTheme;
+      case ThemeKeys.ORANGE:
+        return orangeTheme;
+      case ThemeKeys.AMBER:
+        return amberTheme;
+      case ThemeKeys.INDIGO:
+        return indigoTheme;
+      case ThemeKeys.TEAL:
+        return tealTheme;
+      case ThemeKeys.BLUEGREY:
+        return blueGreyTheme;
+      case ThemeKeys.PURPLE:
+        return purpleTheme;
       default:
-      return greenTheme;
+        return greenTheme;
     }
   }
 }
